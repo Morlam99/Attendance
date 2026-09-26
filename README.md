@@ -1,7 +1,7 @@
 # **Attendance Mark Project**   
 ## This project aims to streamline the attendance process in my CECS 4204 Software Engineering class.
 
-### Time spent in development: 4 hours
+### Time spent in development: 7 hours
 ### The Attendance Marker considers the following as the main stakeholders
 
 - Educators
