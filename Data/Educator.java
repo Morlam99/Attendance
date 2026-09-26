@@ -153,7 +153,7 @@ public class Educator {
     }
 
     /**
-     *
+     * This map returns all courses and their course codes.
      * @return
      */
     public Map<String, Course> getCourses() {
@@ -161,7 +161,7 @@ public class Educator {
     }
 
     /**
-     *
+     * This mape sets the values of courses hash map and.
      * @param courses
      */
     public void setCourses(Map<String, Course> courses) {
