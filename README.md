@@ -29,7 +29,21 @@
 # Users and Roles
 
 | User     | Role-based Permissions                                                                                                                                                                                                                                  | 
-|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:----------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | Student  | Students may see what days they have marked attendance as well as professor responses to excusals. They may not see attendance related information about other students. Students may also see the Attendance Marker form and the Excusal Request form. Students cannot edit their attendance once it has been marked. |
 | Educator | Educators may view attendance related information for all students as well as edit this information. Educators may also view all previously sent excusal forms.                                                                                         |
 
+# Classes
+
+- ###   Student
+- - - 
+ 
+- ### Educator  
+---
+- ### Course
+---
+- ### Department
+---
+- ### Attendance
+---
+- ### Excuse 
