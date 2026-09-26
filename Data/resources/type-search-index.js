@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"pupr.edu.attendance.data.morgan","l":"Student"}];updateSearchResults();
