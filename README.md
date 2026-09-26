@@ -37,11 +37,32 @@
 # Classes
 
 - ###   Student
-- - - 
- 
+
+This class contains information about students such as their first and last name, their student ID,
+whether they are enrolled in a class or not and also whether they are attending or not. This class may only access
+a course's code to verify if they are attending and if they are enrolled. Only the Educator class may edit
+the Student's first name, last name and age.
+---
+
 - ### Educator  
+
+This class will store information pertaining the educators of a course.
+An educator has a first and last name, many courses, many students,
+their unique ID and their unique assigned department.
+
+Educators will be able to add and remove students as well as add and remove courses. Educators will also be able
+to view and edit a student's attendance state. Educators will set course course, name, start and end times.
 ---
 - ### Course
+
+This Course class will store information about the university courses such as Course code, term,
+schedule, professor and students. This class will be able to add and remove students depending on their enrollment
+status. Thus, the only thing it changes is a student's enrollment status. Student variable will be a hash table to
+find them quickly.
+
+One class has many students. One class has many course codes.
+One class has one department. One class has many professors.
+One class has many start and end sessions.
 ---
 - ### Department
 ---
