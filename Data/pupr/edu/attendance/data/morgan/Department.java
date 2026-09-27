@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Department  {
 	private String deptName;
-    private ArrayList<Educator> professors;
+    private ArrayList<Educator> educators;
     private ArrayList<Course> courses;
 
     /**
@@ -40,15 +40,15 @@ public class Department  {
      * @return All professors
      */
     public ArrayList<Educator> getProfessors() {
-        return professors;
+        return educators;
     }
 
     /**
      * Sets the list of professors. It should take a list of professors
      * @param professors all professors
      */
-    public void setProfessors(ArrayList<professors> professors) {
-       this.professors = professors;
+    public void setEducator(ArrayList<Educator> professors) {
+       this.educators = professors;
     }
 
     /**
