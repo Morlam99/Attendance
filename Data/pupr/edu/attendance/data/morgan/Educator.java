@@ -1,4 +1,5 @@
-package pupr.edu.attendance.data.morgan;
+package Data.pupr.edu.attendance.data.morgan;
+
 import java.util.HashMap;
 
 /**
@@ -7,7 +8,7 @@ import java.util.HashMap;
  * their unique ID and their unique assigned department.
  *
  * Educators will be able to add and remove students as well as add and remove courses. Educators will also be able
- * to view and edit a student's attendance state. Educators will set course course, name, start and end times.
+ * to view and edit a student's attendance state. Educators will set course, name, start and end times.
  */
 
 public class Educator {
@@ -16,8 +17,8 @@ public class Educator {
     private String lastName;
     private String educatorID;
     private String department;
-    private Map<String, Student> students;
-    private Map<String, Course> courses;
+    private HashMap<String, Student> students;
+    private HashMap<String, Course> courses;
 
     /**
      * Constructor to create an educator object, initializing their first name,
@@ -40,7 +41,7 @@ public class Educator {
 
     /**
      * Sets the educator's first name as a string.
-     * @param firstName
+     * @param firstName educator's first name
      */
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -56,9 +57,9 @@ public class Educator {
 
     /**
      * Sets the educator's last name as a string.
-     * In the case of sur names, both last names need
+     * In the case of surnames, both last names need
      *  may be entered.
-     * @param lastName
+     * @param lastName educator last name
      */
     public void setLastName(String lastName) {
         this.lastName = lastName;
@@ -74,7 +75,7 @@ public class Educator {
 
     /**
      * Sets the educator's ID as a string. Should be a max of 9 chars.
-     * @param educatorID
+     * @param educatorID educator's id
      */
     public void setEducatorID(String educatorID) {
         this.educatorID = educatorID;
@@ -90,7 +91,7 @@ public class Educator {
 
     /**
      * Sets department name as a string.
-     * @param department
+     * @param department name of department
      */
     public void setDepartment(String department) {
         this.department = department;
@@ -100,7 +101,7 @@ public class Educator {
      * Returns students and their IDs.
      * @return student names and IDs.
      */
-    public Map<String, Student> getStudents() {
+    public HashMap<String, Student> getStudents() {
         return students;
     }
 
@@ -117,7 +118,7 @@ public class Educator {
             return null;
         }
 
-        if (!target.isEnrolled()){
+        if (!Student.isEnrolled()){
             System.out.println("Student not enrolled. Please notify student.");
             return null;
         } else {
@@ -130,11 +131,11 @@ public class Educator {
      * If it doesn't find it in th hash table, the method will notify and return null.
      * If the student isn't enrolled, the method will notify and return null.
      * This is done for posterity.
-     * @return studentobject selected by name
+     * @return studentobject selected by first name
      **/
     public Student getStudentByName(String name) {
        for (Student targetStudent : this.students.values())
-           if (targetStudent.getName().equals(name))
+           if (targetStudent.getFirstName().equals(name))
            {
                return targetStudent;
            } else {
@@ -146,25 +147,25 @@ public class Educator {
     /**
      * Fills the hash map with key value pairs Student ID and student object.
      * The student object should have been created beforehand.
-     * @param students
+     * @param students map of students
      */
-    public void setStudents(Map<String, Student> students) {
+    public void setStudents(HashMap<String, Student> students) {
         this.students = students;
     }
 
     /**
      * This map returns all courses and their course codes.
-     * @return
+     * @return student hashmap
      */
-    public Map<String, Course> getCourses() {
+    public HashMap<String, Course> getCourses() {
         return courses;
     }
 
     /**
      * This mape sets the values of courses hash map and.
-     * @param courses
+     * @param courses courses
      */
-    public void setCourses(Map<String, Course> courses) {
+    public void setCourses(HashMap<String, Course> courses) {
         this.courses = courses;
     }
 }

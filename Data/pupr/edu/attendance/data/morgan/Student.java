@@ -1,4 +1,4 @@
-package pupr.edu.attendance.data.morgan;
+package Data.pupr.edu.attendance.data.morgan;
 
 /**
  * This class contains information about students such as their first and last name, their student ID,
@@ -11,7 +11,7 @@ public class Student {
     private String lastName;
     private String StudentID;
     private boolean isAttending = false;
-    private boolean isEnrolled = false;
+    private static boolean isEnrolled = false;
 
     /**
      * Constructor to create a Student object. Takes @param firstName and @param lastName and @param id
@@ -90,7 +90,7 @@ public class Student {
      * Confirms whether or not a student is enrolled.
      * @return student's enrollment status
      */
-    public boolean isEnrolled() {
+    public static boolean isEnrolled() {
         return isEnrolled;
     }
 

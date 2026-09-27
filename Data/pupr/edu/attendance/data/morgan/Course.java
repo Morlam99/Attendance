@@ -1,5 +1,7 @@
-package pupr.edu.attendance.data.morgan;
+package Data.pupr.edu.attendance.data.morgan;
+
 import java.util.HashMap;
+import java.time.LocalTime;
 /**
  * This Course class will store information about the university courses such as Course code, term,
  * schedule, professor and students. This class will be able to add and remove students depending on their enrollment
@@ -15,16 +17,16 @@ import java.util.HashMap;
 public class Course {
     private String courseName;
     private String courseCode;
-    private Map<String, Student>;
-    // private Professor professor
+    private HashMap<String, Student> students;
+    private Educator professor;
     private String term;
     private LocalTime startClassSession;
     private LocalTime endClassSession;
 
     /**
      * Creates a Course object initializing the course name and code.
-     * @param courseName
-     * @param courseCode
+     * @param courseName name of course
+     * @param courseCode course code
      */
     public Course(String courseName, String courseCode) {
         this.courseName = courseName;
@@ -40,7 +42,7 @@ public class Course {
 
     /**
      * Sets the name of the course.
-     * @param courseName
+     * @param courseName name of course
      */
     public void setCourseName(String courseName) {
         this.courseName = courseName;
@@ -48,7 +50,7 @@ public class Course {
 
     /**
      * Grants the course code. A course may have several sections and thus different codes.
-     * @return
+     * @return course code
      */
     public String getCourseCode() {
         return courseCode;
@@ -56,7 +58,7 @@ public class Course {
 
     /**
      * Sets the course code for a given course.
-     * @param courseCode
+     * @param courseCode course code
      */
     public void setCourseCode(String courseCode) {
         this.courseCode = courseCode;
@@ -73,7 +75,7 @@ public class Course {
     /**
      * Sets the term of the code with the corresponding term. The parameter should be a max of
      * four chars XXYY, where XX is FA for fall and YY is 26 for 2026.
-     * @param term
+     * @param term trimester term
      */
     public void setTerm(String term) {
         this.term = term;
@@ -90,7 +92,7 @@ public class Course {
     /**
      *  Sets the class start time. This will be important to ensure that a student doesn't attempt to mark
      *  attendance outside of the bounds of the class time.
-     * @param startClassSession
+     * @param startClassSession beginning of scheduled class time
      */
     public void setStartClassSession(LocalTime startClassSession) {
         this.startClassSession = startClassSession;
@@ -107,7 +109,7 @@ public class Course {
     /**
      * Sets the time that the class ends. The educator should set an end time so
      * students may not try to mark attendance outside of the bounds of class.
-     * @param endClassSession
+     * @param endClassSession end of scheduled class time
      */
     public void setEndClassSession(LocalTime endClassSession) {
         this.endClassSession = endClassSession;
