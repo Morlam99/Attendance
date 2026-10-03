@@ -21,8 +21,7 @@ package Data.pupr.edu.attendance.data.morgan;
 
 import java.time.LocalTime;
 
-public class Attendance
-{
+public class Attendance {
     int attendanceCount = 0;
     int absenceCount = 0;
     int excuseCount = 0;
@@ -93,4 +92,3 @@ public class Attendance
             }
         }
     }
-}
