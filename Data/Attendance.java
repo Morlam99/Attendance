@@ -17,7 +17,7 @@
  * An observer could be implemented. Will check later.
  */
 
-package Data.pupr.edu.attendance.data.morgan;
+package Data;
 
 import java.time.LocalTime;
 

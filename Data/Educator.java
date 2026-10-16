@@ -1,4 +1,4 @@
-package Data.pupr.edu.attendance.data.morgan;
+package Data;
 
 import java.util.HashMap;
 

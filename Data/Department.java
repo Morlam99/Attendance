@@ -1,4 +1,4 @@
-package Data.pupr.edu.attendance.data.morgan;
+package Data;
 import java.util.ArrayList;
 /**
  * The Department class stores information about a university department (e.g. department of computer science).

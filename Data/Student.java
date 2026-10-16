@@ -1,4 +1,4 @@
-package Data.pupr.edu.attendance.data.morgan;
+package Data;
 
 /**
  * This class contains information about students such as their first and last name, their student ID,
